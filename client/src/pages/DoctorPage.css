@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth; 
+}
+
+.doctor-page{
+    /*background: linear-gradient( hsla(190, 79%, 59%, 1) 0%, hsla(226, 50%, 65%, 1) 100%);*/
+    /* background: linear-gradient(90deg, hsla(212, 35%, 58%, 1) 0%, rgb(176, 191, 215) 100%); */
+    /* background: linear-gradient(90deg, hsla(155, 23%, 71%, 1) 0%, rgb(124, 94, 124) 100%); */
+    /* background: linear-gradient(90deg, rgb(106, 231, 253) 0%, hsla(248, 16%, 61%, 1) 100%); */
+    background: linear-gradient(90deg, #acd5fb 0%, rgb(180, 216, 237) 100%);
+    height:100vh;
+    width:100%;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    backdrop-filter: blur(10px); 
+    padding: 15px 20px; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height:60px;   
+}
+
+.logo{
+    font-size: 20px;
+    color:#000000;
+    font-weight: 600;   
+}
+
+.icon-wrapper {
+    font-size: 25px;
+    margin-right: 5px; /* Optional: add margin to separate the icon from the text */
+}
+
+.icon-wrapper2{
+    font-size: 18px;  
+}
+
+.nav-link{
+    font-size: 15px;
+    font-weight: 520;
+}
+
+.nav-item{
+    cursor: pointer;
+    border: black;
+    margin-top:7px;
+}
+
+.btn{
+    font-size: 15px;
+    border: 1px solid #000000;
+    font-weight: 450;
+    border-radius: 25px;
+    width:85px;
+    padding: 7px;
+    font-weight: 550;
+    margin-top:-1px;
+    
+
+}
+
+.btn:hover{
+    background-color:#91c7fa ;
+}
+
+.nav2 {
+    width: 200px;
+    background-color:#95c2db ;
+    background-color: transparent;
+    height: calc(100% - 50px);
+    overflow: auto;   
+    backdrop-filter: blur(5px); 
+    font-size:16px;
+    margin:0;
+    margin-top:0px;
+    height:92.3vh;
+    margin-left:0;
+    padding-top:10px;
+    align-items: center;
+    text-decoration:solid; 
+    font-weight: 500;
+    
+}
+
+.nav2 ul {
+    list-style-type: none;
+    padding: 5px;
+    margin-top:30px;
+    margin-left:0px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+
+
+.nav2 ul li {
+    padding: 10px 10px;
+    display:flex;
+    align-items:center;
+    margin:0px;
+    margin-left:0px;
+    list-style: none;
+    width: 100%; 
+    font-size:15px;
+}
+
+.nav2 ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: solid;
+    display:flex;
+    align-items:center;
+    background:rgba(255, 255, 255, 0.311);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    border-radius: 15px;
+
+    display: block;
+    padding:10px;
+    justify-content: center;
+    width:180px;  
+    font-size:15px; 
+}
+
+.nav2 ul li a:hover {
+    background-color:transparent;
+    box-shadow: 0 1rem 2rem rgb(28, 28, 28); 
+    border-radius: 20px; 
+    transition: background-color 0.3s ease; 
+    padding:12px 12px;
+
+}
+
+.container-doctor{
+    position: absolute;
+    top: 60px;
+    left: 210px;
+    right: 2.5px;
+    bottom: 2.5px;
+    background-color: rgba(226, 224, 224, 0.105);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), /* Top shadow */
+                0 0 20px rgba(0, 0, 0, 0.381), /* Right shadow */
+                0 0 20px rgba(0, 0, 0, 0.368), /* Bottom shadow */
+                0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(.4rem);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.one{
+    height:100vh;
+    width:40%;
+
+}
+
+
+.profile-picture1{
+    position: absolute;
+    border-radius: 50%; /* Make it circular */
+    background-color: #ccc; /* Placeholder color */
+    background-image: url('1.jpg');
+    height:200px;
+    width:200px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0 auto;
+    margin-top:230px;
+    margin-left:290px;
+ 
+      
+}
+
+.two{
+    
+    height:100vh;
+    width:60%;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+
+}
+
+.profile-info1{
+    justify-content: center;
+    margin:0 auto;
+    margin-left: 60px;
+    margin-top: 260px;
+    
+   
+}
+.profile-info1 h1{
+    font-size: 50px;
+    font-weight: 500px;
+
+}
+
+.profile-info1 p{
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+    
+
+
+
+
+
+
+
+

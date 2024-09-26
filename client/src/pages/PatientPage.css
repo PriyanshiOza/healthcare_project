@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+
+.patient-page{
+    
+    background: linear-gradient(90deg, #acd5fb 0%, rgb(180, 216, 237) 100%);
+    height:100vh;
+    width:100%;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    backdrop-filter: blur(10px); 
+    padding: 15px 20px; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height:60px;
+    
+    
+}
+
+.logo{
+    font-size: 20px;
+    color:#000000;
+    font-weight: 600;
+    
+    
+}
+
+.icon-wrapper {
+    font-size: 25px;
+    margin-right: 5px; /* Optional: add margin to separate the icon from the text */
+  }
+
+.icon-wrapper2{
+    font-size: 18px;
+   
+}
+
+.nav-link{
+    font-size: 15px;
+    font-weight: 520;
+
+}
+
+
+.nav-item{
+    cursor: pointer;
+    border: black;
+    margin-top:7px;
+}
+
+.btn{
+    font-size: 15px;
+    border: 1px solid #000000;
+    font-weight: 450;
+    border-radius: 25px;
+    width:85px;
+    padding: 7px;
+    font-weight: 550;
+    margin-top:-1px;
+    
+
+}
+.btn:hover{
+    background-color:#91c7fa ;
+}
+.nav2 {
+    width: 210px;
+    background-color:#95c2db ;
+    background-color: transparent;
+    height: calc(100% - 50px);
+    overflow: auto;
+    backdrop-filter: blur(5px); 
+    font-size:16px;
+    height:92.3vh;
+    margin-left:0;
+    padding-top:10px;
+    align-items: center;
+    text-decoration:solid; 
+    font-weight: 500;
+    
+}
+
+.nav2 ul {
+    list-style-type: none;
+    padding: 5px;
+    display: flex; 
+    
+    top:0;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+
+
+
+
+.nav2 ul li {
+    padding: 10px 10px;
+    display:flex;
+    align-items:center;
+    list-style: none;
+    width: 100%; 
+    font-size:15px;
+}
+
+
+.nav2 ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: solid;
+    display:flex;
+    align-items:center;
+    background:rgba(255, 255, 255, 0.311);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    border-radius: 15px;
+
+    display: block;
+    padding:10px;
+    justify-content: center;
+    width:190px;  
+    font-size:17px; 
+}
+
+.nav2 ul li a:hover {
+    background-color:transparent;
+    box-shadow: 0 1rem 2rem rgb(28, 28, 28); 
+    border-radius: 20px; 
+    transition: background-color 0.3s ease; 
+    padding:12px 10px;
+
+}
+
+
+
+
+.container-patient{
+    position: absolute;
+    top: 60px;
+    left: 220px;
+    right: 2.5px;
+    bottom: 2.5px;
+    background-color: rgba(226, 224, 224, 0.105);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), /* Top shadow */
+                0 0 20px rgba(0, 0, 0, 0.381), /* Right shadow */
+                0 0 20px rgba(0, 0, 0, 0.368), /* Bottom shadow */
+                0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(.4rem);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.one{
+    height:100vh;
+    width:40%;
+
+}
+
+
+.profile-picture1{
+    position: absolute;
+    border-radius: 50%; /* Make it circular */
+    background-color: #ccc; /* Placeholder color */
+    background-image: url('1.jpg');
+    height:230px;
+    width:230px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0 auto;
+    margin-top:210px;
+    margin-left:270px;
+ 
+      
+}
+
+.two{
+    
+    height:100vh;
+    width:60%;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+
+}
+
+.profile-info1{
+    justify-content: center;
+    margin:0 auto;
+    margin-left: 50px;
+    margin-top: 250px;
+    
+   
+}
+.profile-info1 h1{
+    font-size: 50px;
+    font-weight: 500px;
+
+}
+
+.profile-info1 p{
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+
+.doctor .btn{
+    font-size: 15px;
+    border: 1px solid #000000;
+    font-weight: 450;
+    border-radius: 25px;
+    width:200px;
+    padding: 7px;
+    font-weight: 550;
+    margin-top:-1px;
+}
+
+.doctor-details .info{
+    text-align: right;
+}
+
+.appointment-details .info{
+    text-align: right;
+}
+
+
+
+
+.popup {
+    position: fixed;
+    height: 550px;
+    width:500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 5px rgb(82, 134, 222);
+    text-align: center;
+}
+
+.popup-inner {
+  
+    /* max-width: 400px; */
+    text-align: center;
+    justify-content: center;
+    top:50%;
+    font-size: 15px;
+    
+}
+
+.popup img{
+    border-radius: 200px;
+    margin-bottom: 15px;
+    height: 170px;
+    width: 200px;
+    
+}
+
+.popup-inner h1{
+    padding:5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom:10px;
+}
+
+.popup-inner p{
+    font-size:17px;
+    margin-bottom: 10px;
+
+}
+
+
+
+.popup button {
+    margin-top: 10px;
+    cursor:pointer;
+    width:80px;
+    padding:5px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.popup .book{
+    margin-top: 10px;
+    cursor:pointer;
+    width:170px;
+    padding:5px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.popup button:hover{
+    background-color: #7dbcf8;
+    border: none;
+
+}
+
+
+.appointment-details {
+    margin-top: -10px;
+    background-color:transparent; /* Background color */
+    border: 3px solid rgb(0, 0, 0); /* Border color */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-right: 0px;
+    margin-left: 20px;
+    margin-bottom: 30px; /* Spacing between boxes */
+    /* Box shadow */
+}
+
+/* Style for doctor's name */
+.appointment-details h2 {
+    margin-bottom: 12px; /* Spacing below the name */
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+/* Style for each detail */
+.appointment-details p {
+    margin-bottom: 5px; /* Spacing between details */
+    font-size: 16px;
+}
+
+/* Hover effect */
+.appointment-details:hover {
+    box-shadow: 1px 1px 10px  5px rgba(0, 0, 0, 0.752);  /* Box shadow on hover */
+}
+
+
+.service-details {
+    margin-top: 10px;
+    background-color:transparent; /* Background color */
+    border: 3px solid rgb(0, 0, 0); /* Border color */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+
+    margin-left: 50px;
+    margin-bottom: 30px; /* Spacing between boxes */
+    /* Box shadow */
+    width:65%;
+    height:80%;
+}
+
+.service-details .btn{
+    margin-top: 10px;
+    width:130px;
+}
+
